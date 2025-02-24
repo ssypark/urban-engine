@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 Quiz: Context and Global State</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Week 5 Quiz: Context and Global State</h1>
+
+
+<!-- Question 1 -->
+<div class="question-container">
+    <p class="question">1. What is the primary way state variables are established in React applications?</p>
+    <ul>
+        <li>A) Using the setState() method in functional components</li>
+        <li>B) Using the useState() hook for functional components</li>
+        <li>C) Using Redux for state management</li>
+        <li>D) Using global variables</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(1)">Show Answer</button>
+    <div id="answer1" class="answer">Answer: B) Using the useState() hook for functional components</div>
+</div>
+
+<!-- Question 2 -->
+<div class="question-container">
+    <p class="question">2. What happens when a state variable updates in React?</p>
+    <ul>
+        <li>A) The entire application reloads</li>
+        <li>B) The component where the state is used re-renders</li>
+        <li>C) Only the parent component re-renders</li>
+        <li>D) Nothing happens</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(2)">Show Answer</button>
+    <div id="answer2" class="answer">Answer: B) The component where the state is used re-renders</div>
+</div>
+
+<!-- Question 3 -->
+<div class="question-container">
+    <p class="question">3. Why can managing state in complex applications become challenging?</p>
+    <ul>
+        <li>A) Components cannot share state variables</li>
+        <li>B) State variables cannot persist across component unmounts</li>
+        <li>C) Multiple components may need access to the same state</li>
+        <li>D) React does not support state management</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(3)">Show Answer</button>
+    <div id="answer3" class="answer">Answer: C) Multiple components may need access to the same state</div>
+</div>
+
+<!-- Question 4 -->
+<div class="question-container">
+    <p class="question">4. What is a common example of an application-wide state?</p>
+    <ul>
+        <li>A) UI button color</li>
+        <li>B) Login status</li>
+        <li>C) Page title</li>
+        <li>D) CSS styles</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(4)">Show Answer</button>
+    <div id="answer4" class="answer">Answer: B) Login status</div>
+</div>
+
+<!-- Question 5 -->
+<div class="question-container">
+    <p class="question">5. How does React typically handle state lifting?</p>
+    <ul>
+        <li>A) By making state variables global</li>
+        <li>B) By passing state down through props</li>
+        <li>C) By using Redux for every application</li>
+        <li>D) By storing state in localStorage</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(5)">Show Answer</button>
+    <div id="answer5" class="answer">Answer: B) By passing state down through props</div>
+</div>
+
+<!-- Question 6 -->
+<div class="question-container">
+    <p class="question">6. What is the downside of prop drilling?</p>
+    <ul>
+        <li>A) It increases performance</li>
+        <li>B) It makes debugging easier</li>
+        <li>C) It makes component reusability harder</li>
+        <li>D) It is the best way to manage state</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(6)">Show Answer</button>
+    <div id="answer6" class="answer">Answer: C) It makes component reusability harder</div>
+</div>
+
+<!-- Question 7 -->
+<div class="question-container">
+    <p class="question">7. How does React Context solve prop drilling?</p>
+    <ul>
+        <li>A) By allowing state to be accessed globally</li>
+        <li>B) By forcing all components to re-render</li>
+        <li>C) By replacing all prop usage</li>
+        <li>D) By storing state in an external database</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(7)">Show Answer</button>
+    <div id="answer7" class="answer">Answer: A) By allowing state to be accessed globally</div>
+</div>
+
+<!-- Question 8 -->
+<div class="question-container">
+    <p class="question">8. What function is used to create a new React Context?</p>
+    <ul>
+        <li>A) createGlobalState()</li>
+        <li>B) createContext()</li>
+        <li>C) useReducer()</li>
+        <li>D) useContext()</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(8)">Show Answer</button>
+    <div id="answer8" class="answer">Answer: B) createContext()</div>
+</div>
+
+<!-- Question 9 -->
+<div class="question-container">
+    <p class="question">9. What hook is used in a component to access a React Context?</p>
+    <ul>
+        <li>A) useEffect()</li>
+        <li>B) useState()</li>
+        <li>C) useContext()</li>
+        <li>D) useReducer()</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(9)">Show Answer</button>
+    <div id="answer9" class="answer">Answer: C) useContext()</div>
+</div>
+
+<!-- Question 10 -->
+<div class="question-container">
+    <p class="question">10. What is a key disadvantage of using React Context for state management?</p>
+    <ul>
+        <li>A) It requires external libraries</li>
+        <li>B) It does not work with functional components</li>
+        <li>C) It may cause unnecessary re-renders</li>
+        <li>D) It is harder to debug than prop drilling</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(10)">Show Answer</button>
+    <div id="answer10" class="answer">Answer: C) It may cause unnecessary re-renders</div>
+</div>
+
+<!-- Question 11 -->
+<div class="question-container">
+    <p class="question">11. How do you provide a React Context to multiple components?</p>
+    <ul>
+        <li>A) By wrapping components in a Context.Provider</li>
+        <li>B) By passing context as a prop</li>
+        <li>C) By using Redux</li>
+        <li>D) By calling useContext() in every component</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(11)">Show Answer</button>
+    <div id="answer11" class="answer">Answer: A) By wrapping components in a Context.Provider</div>
+</div>
+
+<!-- Question 12 -->
+<div class="question-container">
+    <p class="question">12. What does the Context.Provider component do?</p>
+    <ul>
+        <li>A) It creates a new global state</li>
+        <li>B) It provides the context value to all child components</li>
+        <li>C) It automatically updates the component’s props</li>
+        <li>D) It replaces useState()</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(12)">Show Answer</button>
+    <div id="answer12" class="answer">Answer: B) It provides the context value to all child components</div>
+</div>
+
+<!-- Question 13 -->
+<div class="question-container">
+    <p class="question">13. What problem does useReducer solve when used with React Context?</p>
+    <ul>
+        <li>A) It prevents unnecessary re-renders</li>
+        <li>B) It removes the need for state</li>
+        <li>C) It replaces useContext()</li>
+        <li>D) It stores data in the cloud</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(13)">Show Answer</button>
+    <div id="answer13" class="answer">Answer: A) It prevents unnecessary re-renders</div>
+</div>
+
+<!-- Question 14 -->
+<div class="question-container">
+    <p class="question">14. What is the purpose of useReducer in state management?</p>
+    <ul>
+        <li>A) To create multiple independent contexts</li>
+        <li>B) To manage complex state logic more effectively</li>
+        <li>C) To replace all useState hooks</li>
+        <li>D) To automatically sync state with an API</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(14)">Show Answer</button>
+    <div id="answer14" class="answer">Answer: B) To manage complex state logic more effectively</div>
+</div>
+
+<!-- Question 15 -->
+<div class="question-container">
+    <p class="question">15. What does a reducer function return in React?</p>
+    <ul>
+        <li>A) A new state value based on the previous state</li>
+        <li>B) A prop value</li>
+        <li>C) A new React component</li>
+        <li>D) A UI change</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(15)">Show Answer</button>
+    <div id="answer15" class="answer">Answer: A) A new state value based on the previous state</div>
+</div>
+
+<!-- Question 16 -->
+<div class="question-container">
+    <p class="question">16. What parameter is passed into a reducer function?</p>
+    <ul>
+        <li>A) The previous state and an action</li>
+        <li>B) The entire React tree</li>
+        <li>C) A context object</li>
+        <li>D) A function reference</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(16)">Show Answer</button>
+    <div id="answer16" class="answer">Answer: A) The previous state and an action</div>
+</div>
+
+<!-- Question 17 -->
+<div class="question-container">
+    <p class="question">17. How does useReducer differ from useState?</p>
+    <ul>
+        <li>A) useReducer is only used in class components</li>
+        <li>B) useReducer is better for managing complex state logic</li>
+        <li>C) useReducer does not update state</li>
+        <li>D) useReducer does not require an initial state</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(17)">Show Answer</button>
+    <div id="answer17" class="answer">Answer: B) useReducer is better for managing complex state logic</div>
+</div>
+
+<!-- Question 18 -->
+<div class="question-container">
+    <p class="question">18. What is the purpose of the dispatch function in useReducer?</p>
+    <ul>
+        <li>A) It updates the React tree</li>
+        <li>B) It triggers the reducer function to update state</li>
+        <li>C) It replaces useContext()</li>
+        <li>D) It stores state in Redux</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(18)">Show Answer</button>
+    <div id="answer18" class="answer">Answer: B) It triggers the reducer function to update state</div>
+</div>
+
+<!-- Question 19 -->
+<div class="question-container">
+    <p class="question">19. What advantage does Redux have over React Context?</p>
+    <ul>
+        <li>A) Redux provides better debugging tools</li>
+        <li>B) Redux is built into React</li>
+        <li>C) Redux automatically updates all components</li>
+        <li>D) Redux does not require reducers</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(19)">Show Answer</button>
+    <div id="answer19" class="answer">Answer: A) Redux provides better debugging tools</div>
+</div>
+
+<!-- Question 20 -->
+<div class="question-container">
+    <p class="question">20. What is a downside of using Redux?</p>
+    <ul>
+        <li>A) It requires additional boilerplate code</li>
+        <li>B) It does not work with functional components</li>
+        <li>C) It does not support middleware</li>
+        <li>D) It automatically persists data</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(20)">Show Answer</button>
+    <div id="answer20" class="answer">Answer: A) It requires additional boilerplate code</div>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 Quiz: Context and Global State</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Week 5 Quiz: Context and Global State</h1>
+
+<!-- Question 21 -->
+<div class="question-container">
+    <p class="question">21. What is the main reason developers use Redux over Context API?</p>
+    <ul>
+        <li>A) Redux requires less code</li>
+        <li>B) Redux has built-in persistence</li>
+        <li>C) Redux provides better state predictability and debugging</li>
+        <li>D) Redux is faster than Context API</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(21)">Show Answer</button>
+    <div id="answer21" class="answer">Answer: C) Redux provides better state predictability and debugging</div>
+</div>
+
+<!-- Question 22 -->
+<div class="question-container">
+    <p class="question">22. Which React function allows components to subscribe to global state values in Context API?</p>
+    <ul>
+        <li>A) useState()</li>
+        <li>B) useReducer()</li>
+        <li>C) useContext()</li>
+        <li>D) useEffect()</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(22)">Show Answer</button>
+    <div id="answer22" class="answer">Answer: C) useContext()</div>
+</div>
+
+<!-- Question 23 -->
+<div class="question-container">
+    <p class="question">23. What is the recommended way to structure a large-scale React application using global state?</p>
+    <ul>
+        <li>A) Use one large Context for everything</li>
+        <li>B) Use multiple smaller Contexts for different features</li>
+        <li>C) Store all state in localStorage</li>
+        <li>D) Avoid using state</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(23)">Show Answer</button>
+    <div id="answer23" class="answer">Answer: B) Use multiple smaller Contexts for different features</div>
+</div>
+
+<!-- Question 24 -->
+<div class="question-container">
+    <p class="question">24. What should be avoided when using React Context for state management?</p>
+    <ul>
+        <li>A) Nesting Context Providers deeply</li>
+        <li>B) Using multiple Contexts</li>
+        <li>C) Using default values</li>
+        <li>D) Using reducers for state changes</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(24)">Show Answer</button>
+    <div id="answer24" class="answer">Answer: A) Nesting Context Providers deeply</div>
+</div>
+
+<!-- Question 25 -->
+<div class="question-container">
+    <p class="question">25. Why might you use middleware with Redux?</p>
+    <ul>
+        <li>A) To enhance debugging and logging</li>
+        <li>B) To replace reducers</li>
+        <li>C) To store UI components</li>
+        <li>D) To remove the need for action types</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(25)">Show Answer</button>
+    <div id="answer25" class="answer">Answer: A) To enhance debugging and logging</div>
+</div>
+
+<!-- Question 26 -->
+<div class="question-container">
+    <p class="question">26. What problem does Redux Toolkit aim to solve?</p>
+    <ul>
+        <li>A) It simplifies Redux state management by reducing boilerplate</li>
+        <li>B) It removes the need for React</li>
+        <li>C) It eliminates the need for reducers</li>
+        <li>D) It is only used for large applications</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(26)">Show Answer</button>
+    <div id="answer26" class="answer">Answer: A) It simplifies Redux state management by reducing boilerplate</div>
+</div>
+
+<!-- Question 27 -->
+<div class="question-container">
+    <p class="question">27. What is a potential downside of using Redux for state management?</p>
+    <ul>
+        <li>A) Redux cannot be used with React</li>
+        <li>B) Redux requires additional boilerplate code</li>
+        <li>C) Redux does not support middleware</li>
+        <li>D) Redux automatically syncs with databases</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(27)">Show Answer</button>
+    <div id="answer27" class="answer">Answer: B) Redux requires additional boilerplate code</div>
+</div>
+
+<!-- Question 28 -->
+<div class="question-container">
+    <p class="question">28. How does Redux improve debugging?</p>
+    <ul>
+        <li>A) It stores all previous state changes</li>
+        <li>B) It prevents state changes</li>
+        <li>C) It logs errors automatically</li>
+        <li>D) It replaces React DevTools</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(28)">Show Answer</button>
+    <div id="answer28" class="answer">Answer: A) It stores all previous state changes</div>
+</div>
+
+<!-- Question 29 -->
+<div class="question-container">
+    <p class="question">29. When should you choose Redux over Context API?</p>
+    <ul>
+        <li>A) When managing simple UI state</li>
+        <li>B) When managing complex global state across many components</li>
+        <li>C) When working only with small applications</li>
+        <li>D) When replacing CSS</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(29)">Show Answer</button>
+    <div id="answer29" class="answer">Answer: B) When managing complex global state across many components</div>
+</div>
+
+<!-- Question 30 -->
+<div class="question-container">
+    <p class="question">30. What best describes the difference between Redux and React Context?</p>
+    <ul>
+        <li>A) Redux is optimized for large-scale state management, while Context is best for simple state sharing</li>
+        <li>B) Redux is built into React</li>
+        <li>C) Context does not support state updates</li>
+        <li>D) Redux replaces the need for all local component states</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(30)">Show Answer</button>
+    <div id="answer30" class="answer">Answer: A) Redux is optimized for large-scale state management, while Context is best for simple state sharing</div>
+</div>
+<footer>
+    <p>Study hard and keep building! 🚀</p>
+</footer>
+
+<script>
+    function toggleAnswer(questionNumber) {
+        const answerElement = document.getElementById('answer' + questionNumber);
+        if (answerElement.style.display === 'none' || answerElement.style.display === '') {
+            answerElement.style.display = 'block';
+        } else {
+            answerElement.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Quiz: Promises and Data Binding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Week 2 Quiz: Promises and Data Binding</h1>
+
+<!-- Question 1 -->
+<div class="question-container">
+    <p class="question">1. What is the key difference between synchronous and asynchronous requests?</p>
+    <ul>
+        <li>A) Synchronous requests execute all at once, while asynchronous requests wait for execution.</li>
+        <li>B) Synchronous requests block further execution until a response is received, while asynchronous requests allow continued execution.</li>
+        <li>C) Asynchronous requests reload the entire page, while synchronous requests do not.</li>
+        <li>D) There is no difference between synchronous and asynchronous requests.</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(1)">Show Answer</button>
+    <div id="answer1" class="answer">Answer: B) Synchronous requests block further execution until a response is received, while asynchronous requests allow continued execution.</div>
+</div>
+
+<!-- Question 2 -->
+<div class="question-container">
+    <p class="question">2. What was one of the first web technologies that introduced asynchronous functionality?</p>
+    <ul>
+        <li>A) Java Applets</li>
+        <li>B) AJAX</li>
+        <li>C) Fetch API</li>
+        <li>D) WebSockets</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(2)">Show Answer</button>
+    <div id="answer2" class="answer">Answer: A) Java Applets</div>
+</div>
+
+<!-- Question 3 -->
+<div class="question-container">
+    <p class="question">3. Why did Java Applets lose popularity despite providing asynchronous functionality?</p>
+    <ul>
+        <li>A) They were difficult to develop.</li>
+        <li>B) AJAX provided a simpler alternative.</li>
+        <li>C) Browser support for Java Applets declined.</li>
+        <li>D) All of the above.</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(3)">Show Answer</button>
+    <div id="answer3" class="answer">Answer: D) All of the above.</div>
+</div>
+
+<!-- Question 4 -->
+<div class="question-container">
+    <p class="question">4. What is the main advantage of asynchronous requests?</p>
+    <ul>
+        <li>A) They allow the client to make multiple requests without waiting for each response.</li>
+        <li>B) They ensure requests return in the order they were sent.</li>
+        <li>C) They prevent page updates.</li>
+        <li>D) They block execution until a response is received.</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(4)">Show Answer</button>
+    <div id="answer4" class="answer">Answer: A) They allow the client to make multiple requests without waiting for each response.</div>
+</div>
+
+<!-- Question 5 -->
+<div class="question-container">
+    <p class="question">5. What are the three possible states of a JavaScript Promise?</p>
+    <ul>
+        <li>A) Pending, Fulfilled, Rejected</li>
+        <li>B) Start, Processing, End</li>
+        <li>C) Request, Response, Completed</li>
+        <li>D) Created, Sent, Received</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(5)">Show Answer</button>
+    <div id="answer5" class="answer">Answer: A) Pending, Fulfilled, Rejected</div>
+</div>
+
+<!-- Question 6 -->
+<div class="question-container">
+    <p class="question">6. What JavaScript method is used to handle a resolved Promise?</p>
+    <ul>
+        <li>A) .resolve()</li>
+        <li>B) .catch()</li>
+        <li>C) .then()</li>
+        <li>D) .finally()</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(6)">Show Answer</button>
+    <div id="answer6" class="answer">Answer: C) .then()</div>
+</div>
+
+<!-- Question 7 -->
+<div class="question-container">
+    <p class="question">7. What method is used in JavaScript to handle errors in a Promise chain?</p>
+    <ul>
+        <li>A) .catch()</li>
+        <li>B) .error()</li>
+        <li>C) .reject()</li>
+        <li>D) .finally()</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(7)">Show Answer</button>
+    <div id="answer7" class="answer">Answer: A) .catch()</div>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Quiz: Promises and Data Binding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Week 2 Quiz: Promises and Data Binding</h1>
+
+<!-- Question 8 -->
+<div class="question-container">
+    <p class="question">8. What is the purpose of chaining Promises?</p>
+    <ul>
+        <li>A) To handle multiple asynchronous operations in sequence.</li>
+        <li>B) To avoid executing functions sequentially.</li>
+        <li>C) To prevent API calls from failing.</li>
+        <li>D) To execute all JavaScript code synchronously.</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(8)">Show Answer</button>
+    <div id="answer8" class="answer">Answer: A) To handle multiple asynchronous operations in sequence.</div>
+</div>
+
+<!-- Question 9 -->
+<div class="question-container">
+    <p class="question">9. What problem does Promise.all() solve?</p>
+    <ul>
+        <li>A) It ensures multiple Promises resolve at the same time.</li>
+        <li>B) It forces Promises to resolve sequentially.</li>
+        <li>C) It prevents API errors.</li>
+        <li>D) It blocks code execution until all Promises fail.</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(9)">Show Answer</button>
+    <div id="answer9" class="answer">Answer: A) It ensures multiple Promises resolve at the same time.</div>
+</div>
+
+<!-- Question 10 -->
+<div class="question-container">
+    <p class="question">10. What is the advantage of using .finally() in a Promise chain?</p>
+    <ul>
+        <li>A) It runs whether the Promise is resolved or rejected.</li>
+        <li>B) It prevents API errors.</li>
+        <li>C) It ensures all Promises run in order.</li>
+        <li>D) It cancels all other Promises.</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(10)">Show Answer</button>
+    <div id="answer10" class="answer">Answer: A) It runs whether the Promise is resolved or rejected.</div>
+</div>
+
+<!-- Question 11 -->
+<div class="question-container">
+    <p class="question">11. What is data binding in JavaScript frameworks?</p>
+    <ul>
+        <li>A) The process of linking data between the UI and business logic.</li>
+        <li>B) A method for making API requests.</li>
+        <li>C) A security feature for encrypting API data.</li>
+        <li>D) A function that allows multiple HTTP requests.</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(11)">Show Answer</button>
+    <div id="answer11" class="answer">Answer: A) The process of linking data between the UI and business logic.</div>
+</div>
+
+<!-- Question 12 -->
+<div class="question-container">
+    <p class="question">12. What are the two types of data binding?</p>
+    <ul>
+        <li>A) One-way and two-way binding.</li>
+        <li>B) Client-side and server-side binding.</li>
+        <li>C) Static and dynamic binding.</li>
+        <li>D) Direct and indirect binding.</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(12)">Show Answer</button>
+    <div id="answer12" class="answer">Answer: A) One-way and two-way binding.</div>
+</div>
+
+<!-- Question 13 -->
+<div class="question-container">
+    <p class="question">13. Which type of data binding allows real-time updates between the model and the view?</p>
+    <ul>
+        <li>A) One-way binding.</li>
+        <li>B) Two-way binding.</li>
+        <li>C) Static binding.</li>
+        <li>D) Manual binding.</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(13)">Show Answer</button>
+    <div id="answer13" class="answer">Answer: B) Two-way binding.</div>
+</div>
+
+<!-- Question 14 -->
+<div class="question-container">
+    <p class="question">14. Which JavaScript framework is known for using two-way data binding?</p>
+    <ul>
+        <li>A) React</li>
+        <li>B) Vue.js</li>
+        <li>C) Angular</li>
+        <li>D) jQuery</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(14)">Show Answer</button>
+    <div id="answer14" class="answer">Answer: C) Angular</div>
+</div>
+
+<!-- Question 15 -->
+<div class="question-container">
+    <p class="question">15. In React, how is one-way data binding typically achieved?</p>
+    <ul>
+        <li>A) Using state and props.</li>
+        <li>B) Using inline JavaScript.</li>
+        <li>C) By modifying the DOM directly.</li>
+        <li>D) Using jQuery methods.</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(15)">Show Answer</button>
+    <div id="answer15" class="answer">Answer: A) Using state and props.</div>
+</div>
+
+<!-- Question 16 -->
+<div class="question-container">
+    <p class="question">16. What is the main purpose of event listeners in JavaScript?</p>
+    <ul>
+        <li>A) To directly modify the DOM</li>
+        <li>B) To handle user interactions asynchronously</li>
+        <li>C) To block page execution</li>
+        <li>D) To reload the page on every event</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(16)">Show Answer</button>
+    <div id="answer16" class="answer">Answer: B) To handle user interactions asynchronously</div>
+</div>
+
+<!-- Question 17 -->
+<div class="question-container">
+    <p class="question">17. Which of the following best describes the role of the Virtual DOM in React?</p>
+    <ul>
+        <li>A) A backup copy of the actual DOM</li>
+        <li>B) A programming language for APIs</li>
+        <li>C) A lightweight copy of the real DOM used to optimize updates</li>
+        <li>D) A method to remove unnecessary UI components</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(17)">Show Answer</button>
+    <div id="answer17" class="answer">Answer: C) A lightweight copy of the real DOM used to optimize updates</div>
+</div>
+
+<!-- Question 18 -->
+<div class="question-container">
+    <p class="question">18. In JavaScript, what does the async keyword do when used in a function?</p>
+    <ul>
+        <li>A) Makes the function return a Promise</li>
+        <li>B) Automatically executes the function</li>
+        <li>C) Prevents the function from running</li>
+        <li>D) Blocks the execution of all subsequent code</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(18)">Show Answer</button>
+    <div id="answer18" class="answer">Answer: A) Makes the function return a Promise</div>
+</div>
+
+<!-- Question 19 -->
+<div class="question-container">
+    <p class="question">19. What is the correct way to handle an async function error?</p>
+    <ul>
+        <li>A) Using try...catch</li>
+        <li>B) Using console.log()</li>
+        <li>C) Using an alert</li>
+        <li>D) Ignoring the error</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(19)">Show Answer</button>
+    <div id="answer19" class="answer">Answer: A) Using try...catch</div>
+</div>
+
+<!-- Question 20 -->
+<div class="question-container">
+    <p class="question">20. Which lifecycle method is used in React to fetch data after a component mounts?</p>
+    <ul>
+        <li>A) componentDidMount</li>
+        <li>B) componentWillUnmount</li>
+        <li>C) render()</li>
+        <li>D) useEffect</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(20)">Show Answer</button>
+    <div id="answer20" class="answer">Answer: D) useEffect</div>
+</div>
+
+<!-- Question 21 -->
+<div class="question-container">
+    <p class="question">21. What is the primary benefit of using the useState hook in React?</p>
+    <ul>
+        <li>A) It allows functional components to manage state</li>
+        <li>B) It replaces the need for Redux</li>
+        <li>C) It eliminates the need for rendering components</li>
+        <li>D) It makes components render synchronously</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(21)">Show Answer</button>
+    <div id="answer21" class="answer">Answer: A) It allows functional components to manage state</div>
+</div>
+
+<!-- Question 22 -->
+<div class="question-container">
+    <p class="question">22. What does the useEffect hook do in React?</p>
+    <ul>
+        <li>A) Executes side effects after a component renders</li>
+        <li>B) Handles UI styling</li>
+        <li>C) Forces a component to update</li>
+        <li>D) Prevents API calls from executing</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(22)">Show Answer</button>
+    <div id="answer22" class="answer">Answer: A) Executes side effects after a component renders</div>
+</div>
+<!-- Question 23 -->
+<div class="question-container">
+    <p class="question">23. What is the default behavior of useEffect in React if no dependency array is provided?</p>
+    <ul>
+        <li>A) It runs only once after the initial render</li>
+        <li>B) It runs on every render</li>
+        <li>C) It does not run at all</li>
+        <li>D) It runs only when state updates</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(23)">Show Answer</button>
+    <div id="answer23" class="answer">Answer: B) It runs on every render</div>
+</div>
+
+<!-- Question 24 -->
+<div class="question-container">
+    <p class="question">24. What does the dependency array in useEffect do?</p>
+    <ul>
+        <li>A) Prevents the effect from running</li>
+        <li>B) Specifies when the effect should re-run</li>
+        <li>C) Forces an immediate component re-render</li>
+        <li>D) Removes the effect from memory</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(24)">Show Answer</button>
+    <div id="answer24" class="answer">Answer: B) Specifies when the effect should re-run</div>
+</div>
+
+<!-- Question 25 -->
+<div class="question-container">
+    <p class="question">25. What does returning a function inside useEffect achieve?</p>
+    <ul>
+        <li>A) It prevents memory leaks by cleaning up effects</li>
+        <li>B) It stops the component from re-rendering</li>
+        <li>C) It forces synchronous execution</li>
+        <li>D) It disables event listeners</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(25)">Show Answer</button>
+    <div id="answer25" class="answer">Answer: A) It prevents memory leaks by cleaning up effects</div>
+</div>
+
+<!-- Question 26 -->
+<div class="question-container">
+    <p class="question">26. What is the primary advantage of using async/await over traditional promise chaining?</p>
+    <ul>
+        <li>A) It improves readability and maintainability</li>
+        <li>B) It makes API calls execute faster</li>
+        <li>C) It prevents all errors in JavaScript</li>
+        <li>D) It automatically retries failed requests</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(26)">Show Answer</button>
+    <div id="answer26" class="answer">Answer: A) It improves readability and maintainability</div>
+</div>
+
+<!-- Question 27 -->
+<div class="question-container">
+    <p class="question">27. What is the purpose of the fetch() function in JavaScript?</p>
+    <ul>
+        <li>A) To send HTTP requests and retrieve responses</li>
+        <li>B) To update the DOM without reloading</li>
+        <li>C) To handle form validation</li>
+        <li>D) To bind data to UI components</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(27)">Show Answer</button>
+    <div id="answer27" class="answer">Answer: A) To send HTTP requests and retrieve responses</div>
+</div>
+
+<!-- Question 28 -->
+<div class="question-container">
+    <p class="question">28. What happens if an API request fails inside an async function without a try/catch block?</p>
+    <ul>
+        <li>A) The function crashes the entire application</li>
+        <li>B) The promise is rejected, but the error is not handled</li>
+        <li>C) The request automatically retries</li>
+        <li>D) The function returns null</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(28)">Show Answer</button>
+    <div id="answer28" class="answer">Answer: B) The promise is rejected, but the error is not handled</div>
+</div>
+
+<!-- Question 29 -->
+<div class="question-container">
+    <p class="question">29. What is the purpose of the .json() method when using fetch()?</p>
+    <ul>
+        <li>A) To parse the response body as JSON</li>
+        <li>B) To stringify an object before sending it</li>
+        <li>C) To encrypt API responses</li>
+        <li>D) To close the API connection</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(29)">Show Answer</button>
+    <div id="answer29" class="answer">Answer: A) To parse the response body as JSON</div>
+</div>
+
+<!-- Question 30 -->
+<div class="question-container">
+    <p class="question">30. What does the term "side effect" refer to in React?</p>
+    <ul>
+        <li>A) Any operation that affects the outside world</li>
+        <li>B) A bug in the application</li>
+        <li>C) A built-in function in React</li>
+        <li>D) A redundant component update</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(30)">Show Answer</button>
+    <div id="answer30" class="answer">Answer: A) Any operation that affects the outside world</div>
+</div>
+
+<footer>
+    <p>Practice makes perfect! 🚀</p>
+</footer>
+
+<script>
+    function toggleAnswer(questionNumber) {
+        const answerElement = document.getElementById('answer' + questionNumber);
+        if (answerElement.style.display === 'none' || answerElement.style.display === '') {
+            answerElement.style.display = 'block';
+        } else {
+            answerElement.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

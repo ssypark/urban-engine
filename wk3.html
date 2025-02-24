@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Quiz: React Navigation Revisited</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Week 3 Quiz: React Navigation Revisited</h1>
+
+<!-- Question 1 -->
+<div class="question-container">
+    <p class="question">1. What is the difference between dynamic and static navigation in React Navigation v7?</p>
+    <ul>
+        <li>A) Dynamic navigation requires more code and is instantiated as a variable reference</li>
+        <li>B) Static navigation requires creating a separate configuration file</li>
+        <li>C) Dynamic navigation is no longer supported in React Navigation v7</li>
+        <li>D) Static navigation must always be used for deep linking</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(1)">Show Answer</button>
+    <div id="answer1" class="answer">Answer: A) Dynamic navigation requires more code and is instantiated as a variable reference</div>
+</div>
+
+<!-- Question 2 -->
+<div class="question-container">
+    <p class="question">2. Which of the following is an advantage of using static navigation in React Navigation v7?</p>
+    <ul>
+        <li>A) It eliminates the need for a NavigationContainer</li>
+        <li>B) It integrates better with TypeScript by defining static types</li>
+        <li>C) It does not require any configuration</li>
+        <li>D) It automatically generates deep links</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(2)">Show Answer</button>
+    <div id="answer2" class="answer">Answer: B) It integrates better with TypeScript by defining static types</div>
+</div>
+
+<!-- Question 3 -->
+<div class="question-container">
+    <p class="question">3. Which React Navigation method is used to define deep linking in static navigation?</p>
+    <ul>
+        <li>A) screenOptions</li>
+        <li>B) navigation.navigate()</li>
+        <li>C) createStaticNavigation()</li>
+        <li>D) screen param in the route object</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(3)">Show Answer</button>
+    <div id="answer3" class="answer">Answer: D) screen param in the route object</div>
+</div>
+
+<!-- Question 4 -->
+<div class="question-container">
+    <p class="question">4. Which navigator in React Navigation provides a way to mimic native OS navigation patterns?</p>
+    <ul>
+        <li>A) BottomTabs</li>
+        <li>B) Stack</li>
+        <li>C) Drawer</li>
+        <li>D) MaterialTopTabs</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(4)">Show Answer</button>
+    <div id="answer4" class="answer">Answer: B) Stack</div>
+</div>
+
+<!-- Question 5 -->
+<div class="question-container">
+    <p class="question">5. What is the main difference between Stack and NativeStack navigators?</p>
+    <ul>
+        <li>A) NativeStack is faster and optimized for performance using OS-specific APIs</li>
+        <li>B) Stack navigator is deprecated in React Navigation v7</li>
+        <li>C) NativeStack does not support navigation parameters</li>
+        <li>D) Stack navigator cannot handle deep linking</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(5)">Show Answer</button>
+    <div id="answer5" class="answer">Answer: A) NativeStack is faster and optimized for performance using OS-specific APIs</div>
+</div>
+
+<!-- Question 6 -->
+<div class="question-container">
+    <p class="question">6. Which navigator in React Navigation is commonly used for tab-based navigation?</p>
+    <ul>
+        <li>A) Drawer</li>
+        <li>B) Stack</li>
+        <li>C) BottomTabs</li>
+        <li>D) NativeStack</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(6)">Show Answer</button>
+    <div id="answer6" class="answer">Answer: C) BottomTabs</div>
+</div>
+
+<!-- Question 7 -->
+<div class="question-container">
+    <p class="question">7. Which React Navigation method allows for navigating between nested navigators?</p>
+    <ul>
+        <li>A) jumpTo()</li>
+        <li>B) replace()</li>
+        <li>C) navigate()</li>
+        <li>D) openDrawer()</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(7)">Show Answer</button>
+    <div id="answer7" class="answer">Answer: C) navigate()</div>
+</div>
+
+<!-- Question 8 -->
+<div class="question-container">
+    <p class="question">8. In React Navigation, which hook is used to retrieve the navigation object?</p>
+    <ul>
+        <li>A) useRoute</li>
+        <li>B) useState</li>
+        <li>C) useNavigation</li>
+        <li>D) useEffect</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(8)">Show Answer</button>
+    <div id="answer8" class="answer">Answer: C) useNavigation</div>
+</div>
+
+<!-- Question 9 -->
+<div class="question-container">
+    <p class="question">9. Which navigation method is specifically used for tab navigation?</p>
+    <ul>
+        <li>A) navigate()</li>
+        <li>B) jumpTo()</li>
+        <li>C) push()</li>
+        <li>D) popToTop()</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(9)">Show Answer</button>
+    <div id="answer9" class="answer">Answer: B) jumpTo()</div>
+</div>
+
+<!-- Question 10 -->
+<div class="question-container">
+    <p class="question">10. What is the purpose of the getParent() method in React Navigation?</p>
+    <ul>
+        <li>A) To retrieve the state of a parent navigator</li>
+        <li>B) To navigate to a nested screen</li>
+        <li>C) To clear navigation history</li>
+        <li>D) To close a modal</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(10)">Show Answer</button>
+    <div id="answer10" class="answer">Answer: A) To retrieve the state of a parent navigator</div>
+</div>
+<!-- Question 11 -->
+<div class="question-container">
+    <p class="question">11. What is the purpose of the push() method in React Navigation?</p>
+    <ul>
+        <li>A) To navigate to a new screen and add it to the stack</li>
+        <li>B) To go back to the previous screen</li>
+        <li>C) To replace the current screen</li>
+        <li>D) To remove all screens from the stack</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(11)">Show Answer</button>
+    <div id="answer11" class="answer">Answer: A) To navigate to a new screen and add it to the stack</div>
+</div>
+
+<!-- Question 12 -->
+<div class="question-container">
+    <p class="question">12. What does the goBack() method do in React Navigation?</p>
+    <ul>
+        <li>A) Navigates to a specific screen</li>
+        <li>B) Goes back to the previous screen</li>
+        <li>C) Reloads the current screen</li>
+        <li>D) Removes all screens from the stack</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(12)">Show Answer</button>
+    <div id="answer12" class="answer">Answer: B) Goes back to the previous screen</div>
+</div>
+
+<!-- Question 13 -->
+<div class="question-container">
+    <p class="question">13. What parameter is required when passing data between screens in React Navigation?</p>
+    <ul>
+        <li>A) route.params</li>
+        <li>B) screenProps</li>
+        <li>C) navigatorConfig</li>
+        <li>D) stackOptions</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(13)">Show Answer</button>
+    <div id="answer13" class="answer">Answer: A) route.params</div>
+</div>
+
+<!-- Question 14 -->
+<div class="question-container">
+    <p class="question">14. What is the primary use of the replace() method in React Navigation?</p>
+    <ul>
+        <li>A) To push a new screen onto the stack</li>
+        <li>B) To replace the current screen with a new one</li>
+        <li>C) To close the application</li>
+        <li>D) To reset the navigation state</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(14)">Show Answer</button>
+    <div id="answer14" class="answer">Answer: B) To replace the current screen with a new one</div>
+</div>
+
+<!-- Question 15 -->
+<div class="question-container">
+    <p class="question">15. What is the purpose of the reset() method in React Navigation?</p>
+    <ul>
+        <li>A) To clear the navigation history and set a new route stack</li>
+        <li>B) To reload the current screen</li>
+        <li>C) To go back to the home screen</li>
+        <li>D) To update the current route params</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(15)">Show Answer</button>
+    <div id="answer15" class="answer">Answer: A) To clear the navigation history and set a new route stack</div>
+</div>
+
+<!-- Question 16 -->
+<div class="question-container">
+    <p class="question">16. What does the popToTop() method do in React Navigation?</p>
+    <ul>
+        <li>A) Removes all screens except the first one</li>
+        <li>B) Replaces the current screen with the home screen</li>
+        <li>C) Goes back one screen</li>
+        <li>D) Prevents the user from navigating</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(16)">Show Answer</button>
+    <div id="answer16" class="answer">Answer: A) Removes all screens except the first one</div>
+</div>
+
+<!-- Question 17 -->
+<div class="question-container">
+    <p class="question">17. What is the purpose of the addListener() method in React Navigation?</p>
+    <ul>
+        <li>A) To listen for navigation events</li>
+        <li>B) To add a new screen dynamically</li>
+        <li>C) To reset navigation parameters</li>
+        <li>D) To force a screen re-render</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(17)">Show Answer</button>
+    <div id="answer17" class="answer">Answer: A) To listen for navigation events</div>
+</div>
+
+<!-- Question 18 -->
+<div class="question-container">
+    <p class="question">18. What is the main function of the Drawer Navigator in React Navigation?</p>
+    <ul>
+        <li>A) To create a sidebar navigation menu</li>
+        <li>B) To manage deep linking</li>
+        <li>C) To replace the Stack Navigator</li>
+        <li>D) To update screen parameters</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(18)">Show Answer</button>
+    <div id="answer18" class="answer">Answer: A) To create a sidebar navigation menu</div>
+</div>
+
+<!-- Question 19 -->
+<div class="question-container">
+    <p class="question">19. What is the default transition style used in Stack Navigator?</p>
+    <ul>
+        <li>A) Slide from the right</li>
+        <li>B) Fade</li>
+        <li>C) Scale</li>
+        <li>D) None</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(19)">Show Answer</button>
+    <div id="answer19" class="answer">Answer: A) Slide from the right</div>
+</div>
+
+<!-- Question 20 -->
+<div class="question-container">
+    <p class="question">20. Which React Navigation component allows for bottom tab navigation?</p>
+    <ul>
+        <li>A) createBottomTabNavigator</li>
+        <li>B) createStackNavigator</li>
+        <li>C) createDrawerNavigator</li>
+        <li>D) createSwitchNavigator</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(20)">Show Answer</button>
+    <div id="answer20" class="answer">Answer: A) createBottomTabNavigator</div>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Quiz: React Navigation Revisited</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Week 3 Quiz: React Navigation Revisited</h1>
+
+<!-- Question 21 -->
+<div class="question-container">
+    <p class="question">21. What is the purpose of the gestureEnabled option in Stack Navigator?</p>
+    <ul>
+        <li>A) Enables or disables gesture-based navigation</li>
+        <li>B) Forces a transition animation</li>
+        <li>C) Prevents navigation between screens</li>
+        <li>D) Disables deep linking</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(21)">Show Answer</button>
+    <div id="answer21" class="answer">Answer: A) Enables or disables gesture-based navigation</div>
+</div>
+
+<!-- Question 22 -->
+<div class="question-container">
+    <p class="question">22. How do you specify custom transition animations in React Navigation?</p>
+    <ul>
+        <li>A) Using the transitionConfig prop</li>
+        <li>B) By modifying the stackOptions</li>
+        <li>C) With a separate transition handler</li>
+        <li>D) By overriding the navigate() method</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(22)">Show Answer</button>
+    <div id="answer22" class="answer">Answer: B) By modifying the stackOptions</div>
+</div>
+
+<!-- Question 23 -->
+<div class="question-container">
+    <p class="question">23. What is the default behavior of the back button in Stack Navigator?</p>
+    <ul>
+        <li>A) It exits the application</li>
+        <li>B) It navigates to the home screen</li>
+        <li>C) It goes back to the previous screen</li>
+        <li>D) It refreshes the current screen</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(23)">Show Answer</button>
+    <div id="answer23" class="answer">Answer: C) It goes back to the previous screen</div>
+</div>
+
+<!-- Question 24 -->
+<div class="question-container">
+    <p class="question">24. What is the purpose of initialRouteName in a navigator configuration?</p>
+    <ul>
+        <li>A) Defines the default screen when the navigator loads</li>
+        <li>B) Sets the route transition style</li>
+        <li>C) Specifies the parent navigator</li>
+        <li>D) Forces a screen refresh</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(24)">Show Answer</button>
+    <div id="answer24" class="answer">Answer: A) Defines the default screen when the navigator loads</div>
+</div>
+
+<!-- Question 25 -->
+<div class="question-container">
+    <p class="question">25. What is the primary use case for the pop() method in Stack Navigator?</p>
+    <ul>
+        <li>A) To remove the top screen from the stack</li>
+        <li>B) To navigate to a new screen</li>
+        <li>C) To replace the current screen</li>
+        <li>D) To restart the application</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(25)">Show Answer</button>
+    <div id="answer25" class="answer">Answer: A) To remove the top screen from the stack</div>
+</div>
+
+<!-- Question 26 -->
+<div class="question-container">
+    <p class="question">26. What is the purpose of the headerShown property in screen options?</p>
+    <ul>
+        <li>A) Determines whether the header is visible</li>
+        <li>B) Specifies the transition animation</li>
+        <li>C) Forces a screen re-render</li>
+        <li>D) Disables navigation gestures</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(26)">Show Answer</button>
+    <div id="answer26" class="answer">Answer: A) Determines whether the header is visible</div>
+</div>
+
+<!-- Question 27 -->
+<div class="question-container">
+    <p class="question">27. What does the screenOptions property define in a navigator?</p>
+    <ul>
+        <li>A) Global styling and behavior for all screens</li>
+        <li>B) The default route for deep linking</li>
+        <li>C) The route transition style</li>
+        <li>D) A static configuration for route parameters</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(27)">Show Answer</button>
+    <div id="answer27" class="answer">Answer: A) Global styling and behavior for all screens</div>
+</div>
+
+<!-- Question 28 -->
+<div class="question-container">
+    <p class="question">28. What is the primary advantage of using useNavigation() hook?</p>
+    <ul>
+        <li>A) Provides access to the navigation object without prop drilling</li>
+        <li>B) Forces a screen re-render</li>
+        <li>C) Prevents navigation events from being triggered</li>
+        <li>D) Allows defining navigation outside the component tree</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(28)">Show Answer</button>
+    <div id="answer28" class="answer">Answer: A) Provides access to the navigation object without prop drilling</div>
+</div>
+
+<!-- Question 29 -->
+<div class="question-container">
+    <p class="question">29. How can you programmatically set parameters for a screen in React Navigation?</p>
+    <ul>
+        <li>A) Using navigation.setParams()</li>
+        <li>B) By modifying the route object directly</li>
+        <li>C) Through useState() hook</li>
+        <li>D) With a global configuration file</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(29)">Show Answer</button>
+    <div id="answer29" class="answer">Answer: A) Using navigation.setParams()</div>
+</div>
+
+<!-- Question 30 -->
+<div class="question-container">
+    <p class="question">30. What is the recommended way to implement deep linking in React Navigation?</p>
+    <ul>
+        <li>A) Define linking configuration in NavigationContainer</li>
+        <li>B) Manually parse URL parameters</li>
+        <li>C) Use localStorage to save navigation state</li>
+        <li>D) Create a separate navigator instance</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(30)">Show Answer</button>
+    <div id="answer30" class="answer">Answer: A) Define linking configuration in NavigationContainer</div>
+</div>
+<footer>
+    <p>Practice makes perfect! 🚀</p>
+</footer>
+
+<script>
+    function toggleAnswer(questionNumber) {
+        const answerElement = document.getElementById('answer' + questionNumber);
+        if (answerElement.style.display === 'none' || answerElement.style.display === '') {
+            answerElement.style.display = 'block';
+        } else {
+            answerElement.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

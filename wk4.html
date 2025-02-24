@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Quiz: Data Persistence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Week 4 Quiz: Data Persistence</h1>
+
+<!-- Question 1 -->
+<div class="question-container">
+    <p class="question">1. What is data persistence in React Native?</p>
+    <ul>
+        <li>A) The ability to store data temporarily in the app's memory</li>
+        <li>B) The process of retrieving data from an API</li>
+        <li>C) The ability to store data even after the app is closed and reopened</li>
+        <li>D) A method to optimize animations in React Native</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(1)">Show Answer</button>
+    <div id="answer1" class="answer">Answer: C) The ability to store data even after the app is closed and reopened</div>
+</div>
+
+<!-- Question 2 -->
+<div class="question-container">
+    <p class="question">2. What is one common approach to storing persistent data in React Native?</p>
+    <ul>
+        <li>A) Using Redux for state management</li>
+        <li>B) Using AsyncStorage</li>
+        <li>C) Using an API call for every data request</li>
+        <li>D) Using session storage</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(2)">Show Answer</button>
+    <div id="answer2" class="answer">Answer: B) Using AsyncStorage</div>
+</div>
+
+<!-- Question 3 -->
+<div class="question-container">
+    <p class="question">3. What is a key limitation of app-specific internal storage?</p>
+    <ul>
+        <li>A) It cannot store key-value pairs</li>
+        <li>B) It requires an internet connection</li>
+        <li>C) It is accessible only by the app that wrote it</li>
+        <li>D) It automatically syncs across devices</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(3)">Show Answer</button>
+    <div id="answer3" class="answer">Answer: C) It is accessible only by the app that wrote it</div>
+</div>
+
+<!-- Question 4 -->
+<div class="question-container">
+    <p class="question">4. What data structure does AsyncStorage use to store information?</p>
+    <ul>
+        <li>A) JSON-formatted key-value pairs</li>
+        <li>B) Relational database tables</li>
+        <li>C) XML documents</li>
+        <li>D) Plaintext files</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(4)">Show Answer</button>
+    <div id="answer4" class="answer">Answer: A) JSON-formatted key-value pairs</div>
+</div>
+
+<!-- Question 5 -->
+<div class="question-container">
+    <p class="question">5. Why is AsyncStorage considered "unsecure" for sensitive data?</p>
+    <ul>
+        <li>A) It requires an active internet connection</li>
+        <li>B) It can be accessed by any installed app</li>
+        <li>C) It is not encrypted by default</li>
+        <li>D) It has a limited storage capacity</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(5)">Show Answer</button>
+    <div id="answer5" class="answer">Answer: C) It is not encrypted by default</div>
+</div>
+
+<!-- Question 6 -->
+<div class="question-container">
+    <p class="question">6. What is the correct way to install AsyncStorage?</p>
+    <ul>
+        <li>A) npm install async-storage</li>
+        <li>B) npm install @react-native-async-storage/async-storage</li>
+        <li>C) npm install react-native-storage</li>
+        <li>D) npm install redux-persist</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(6)">Show Answer</button>
+    <div id="answer6" class="answer">Answer: B) npm install @react-native-async-storage/async-storage</div>
+</div>
+
+<!-- Question 7 -->
+<div class="question-container">
+    <p class="question">7. Which method is used to store data in AsyncStorage?</p>
+    <ul>
+        <li>A) setItem()</li>
+        <li>B) storeData()</li>
+        <li>C) pushItem()</li>
+        <li>D) saveData()</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(7)">Show Answer</button>
+    <div id="answer7" class="answer">Answer: A) setItem()</div>
+</div>
+
+<!-- Question 8 -->
+<div class="question-container">
+    <p class="question">8. Which AsyncStorage method retrieves stored data?</p>
+    <ul>
+        <li>A) getData()</li>
+        <li>B) fetchItem()</li>
+        <li>C) getItem()</li>
+        <li>D) retrieveValue()</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(8)">Show Answer</button>
+    <div id="answer8" class="answer">Answer: C) getItem()</div>
+</div>
+
+<!-- Question 9 -->
+<div class="question-container">
+    <p class="question">9. What is the purpose of try/catch blocks when working with AsyncStorage?</p>
+    <ul>
+        <li>A) To prevent app crashes due to storage errors</li>
+        <li>B) To speed up data retrieval</li>
+        <li>C) To encrypt data automatically</li>
+        <li>D) To optimize app performance</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(9)">Show Answer</button>
+    <div id="answer9" class="answer">Answer: A) To prevent app crashes due to storage errors</div>
+</div>
+
+<!-- Question 10 -->
+<div class="question-container">
+    <p class="question">10. What happens when the removeItem() method is used in AsyncStorage?</p>
+    <ul>
+        <li>A) It deletes all stored data</li>
+        <li>B) It removes a specific key-value pair</li>
+        <li>C) It encrypts the stored data</li>
+        <li>D) It syncs the data with the server</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(10)">Show Answer</button>
+    <div id="answer10" class="answer">Answer: B) It removes a specific key-value pair</div>
+</div>
+<!-- Question 11 -->
+<div class="question-container">
+    <p class="question">11. What is a major benefit of using SecureStore over AsyncStorage?</p>
+    <ul>
+        <li>A) It is faster</li>
+        <li>B) It encrypts stored data</li>
+        <li>C) It allows unlimited storage</li>
+        <li>D) It requires no installation</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(11)">Show Answer</button>
+    <div id="answer11" class="answer">Answer: B) It encrypts stored data</div>
+</div>
+
+<!-- Question 12 -->
+<div class="question-container">
+    <p class="question">12. Which storage option is best suited for storing sensitive user credentials?</p>
+    <ul>
+        <li>A) AsyncStorage</li>
+        <li>B) SecureStore</li>
+        <li>C) LocalStorage</li>
+        <li>D) SessionStorage</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(12)">Show Answer</button>
+    <div id="answer12" class="answer">Answer: B) SecureStore</div>
+</div>
+
+<!-- Question 13 -->
+<div class="question-container">
+    <p class="question">13. What method does SecureStore provide for storing data?</p>
+    <ul>
+        <li>A) setItem()</li>
+        <li>B) storeAsync()</li>
+        <li>C) setSecureItem()</li>
+        <li>D) saveData()</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(13)">Show Answer</button>
+    <div id="answer13" class="answer">Answer: A) setItem()</div>
+</div>
+
+<!-- Question 14 -->
+<div class="question-container">
+    <p class="question">14. What is the key advantage of using SQLite in a React Native app?</p>
+    <ul>
+        <li>A) It provides structured relational storage</li>
+        <li>B) It is faster than using Redux</li>
+        <li>C) It stores data in the cloud automatically</li>
+        <li>D) It does not require any installation</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(14)">Show Answer</button>
+    <div id="answer14" class="answer">Answer: A) It provides structured relational storage</div>
+</div>
+
+<!-- Question 15 -->
+<div class="question-container">
+    <p class="question">15. What type of data is best suited for Firebase Firestore?</p>
+    <ul>
+        <li>A) Large files like images</li>
+        <li>B) Highly structured relational data</li>
+        <li>C) JSON-based real-time data</li>
+        <li>D) Local-only storage</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(15)">Show Answer</button>
+    <div id="answer15" class="answer">Answer: C) JSON-based real-time data</div>
+</div>
+
+<!-- Question 16 -->
+<div class="question-container">
+    <p class="question">16. How does Redux Persist help with data persistence?</p>
+    <ul>
+        <li>A) It stores Redux state in AsyncStorage or local storage</li>
+        <li>B) It provides automatic database backups</li>
+        <li>C) It prevents state from changing</li>
+        <li>D) It encrypts all stored data</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(16)">Show Answer</button>
+    <div id="answer16" class="answer">Answer: A) It stores Redux state in AsyncStorage or local storage</div>
+</div>
+
+<!-- Question 17 -->
+<div class="question-container">
+    <p class="question">17. What is a downside of using Firebase Firestore for offline-first applications?</p>
+    <ul>
+        <li>A) It does not support offline mode</li>
+        <li>B) Data sync may cause conflicts when reconnecting</li>
+        <li>C) It requires complex SQL queries</li>
+        <li>D) It lacks cloud-based storage</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(17)">Show Answer</button>
+    <div id="answer17" class="answer">Answer: B) Data sync may cause conflicts when reconnecting</div>
+</div>
+
+<!-- Question 18 -->
+<div class="question-container">
+    <p class="question">18. Which of the following methods is NOT used for data persistence?</p>
+    <ul>
+        <li>A) AsyncStorage</li>
+        <li>B) SecureStore</li>
+        <li>C) Redux Reducers</li>
+        <li>D) SQLite</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(18)">Show Answer</button>
+    <div id="answer18" class="answer">Answer: C) Redux Reducers</div>
+</div>
+
+<!-- Question 19 -->
+<div class="question-container">
+    <p class="question">19. Why is Firebase often chosen for mobile applications?</p>
+    <ul>
+        <li>A) It provides real-time database sync</li>
+        <li>B) It requires no authentication</li>
+        <li>C) It is built into React Native</li>
+        <li>D) It only supports offline storage</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(19)">Show Answer</button>
+    <div id="answer19" class="answer">Answer: A) It provides real-time database sync</div>
+</div>
+
+<!-- Question 20 -->
+<div class="question-container">
+    <p class="question">20. What command is used to install Firebase in a React Native project?</p>
+    <ul>
+        <li>A) npm install firebase</li>
+        <li>B) npm install @react-native-firebase/app</li>
+        <li>C) npm install redux-firebase</li>
+        <li>D) npm install firestore-react</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(20)">Show Answer</button>
+    <div id="answer20" class="answer">Answer: B) npm install @react-native-firebase/app</div>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Quiz: Data Persistence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Week 4 Quiz: Data Persistence</h1>
+
+<!-- Question 21 -->
+<div class="question-container">
+    <p class="question">21. What is the primary reason for using an indexed database in React Native?</p>
+    <ul>
+        <li>A) It reduces app bundle size</li>
+        <li>B) It improves performance for structured queries</li>
+        <li>C) It prevents data loss during updates</li>
+        <li>D) It allows cross-platform compatibility</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(21)">Show Answer</button>
+    <div id="answer21" class="answer">Answer: B) It improves performance for structured queries</div>
+</div>
+
+<!-- Question 22 -->
+<div class="question-container">
+    <p class="question">22. How does WatermelonDB optimize database operations?</p>
+    <ul>
+        <li>A) By storing data in a compressed format</li>
+        <li>B) By offloading processing to native threads</li>
+        <li>C) By caching all responses in Redux</li>
+        <li>D) By using GraphQL for data retrieval</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(22)">Show Answer</button>
+    <div id="answer22" class="answer">Answer: B) By offloading processing to native threads</div>
+</div>
+
+<!-- Question 23 -->
+<div class="question-container">
+    <p class="question">23. What is the main advantage of using Realm over AsyncStorage?</p>
+    <ul>
+        <li>A) It has built-in encryption</li>
+        <li>B) It does not require an internet connection</li>
+        <li>C) It automatically syncs data to Firebase</li>
+        <li>D) It is easier to debug</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(23)">Show Answer</button>
+    <div id="answer23" class="answer">Answer: A) It has built-in encryption</div>
+</div>
+
+<!-- Question 24 -->
+<div class="question-container">
+    <p class="question">24. Which database is optimized for handling large datasets in mobile applications?</p>
+    <ul>
+        <li>A) AsyncStorage</li>
+        <li>B) SQLite</li>
+        <li>C) SecureStore</li>
+        <li>D) LocalStorage</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(24)">Show Answer</button>
+    <div id="answer24" class="answer">Answer: B) SQLite</div>
+</div>
+
+<!-- Question 25 -->
+<div class="question-container">
+    <p class="question">25. What is a key drawback of using Redux Persist?</p>
+    <ul>
+        <li>A) It requires a database connection</li>
+        <li>B) It may slow down app startup time</li>
+        <li>C) It only works online</li>
+        <li>D) It cannot store JSON data</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(25)">Show Answer</button>
+    <div id="answer25" class="answer">Answer: B) It may slow down app startup time</div>
+</div>
+
+<!-- Question 26 -->
+<div class="question-container">
+    <p class="question">26. What storage solution is best for storing large amounts of relational data locally?</p>
+    <ul>
+        <li>A) SecureStore</li>
+        <li>B) Firebase Firestore</li>
+        <li>C) SQLite</li>
+        <li>D) AsyncStorage</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(26)">Show Answer</button>
+    <div id="answer26" class="answer">Answer: C) SQLite</div>
+</div>
+
+<!-- Question 27 -->
+<div class="question-container">
+    <p class="question">27. How does WatermelonDB handle offline data synchronization?</p>
+    <ul>
+        <li>A) It syncs automatically with Firebase</li>
+        <li>B) It uses a background process for sync</li>
+        <li>C) It requires manual data entry</li>
+        <li>D) It does not support offline sync</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(27)">Show Answer</button>
+    <div id="answer27" class="answer">Answer: B) It uses a background process for sync</div>
+</div>
+
+<!-- Question 28 -->
+<div class="question-container">
+    <p class="question">28. What makes Firebase a strong choice for real-time applications?</p>
+    <ul>
+        <li>A) It uses NoSQL structure with automatic updates</li>
+        <li>B) It has built-in SQL support</li>
+        <li>C) It allows unlimited data storage</li>
+        <li>D) It is only available for enterprise users</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(28)">Show Answer</button>
+    <div id="answer28" class="answer">Answer: A) It uses NoSQL structure with automatic updates</div>
+</div>
+
+<!-- Question 29 -->
+<div class="question-container">
+    <p class="question">29. What is the purpose of setItem() in AsyncStorage?</p>
+    <ul>
+        <li>A) It removes an item from storage</li>
+        <li>B) It stores a key-value pair</li>
+        <li>C) It fetches data from storage</li>
+        <li>D) It encrypts data before storing</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(29)">Show Answer</button>
+    <div id="answer29" class="answer">Answer: B) It stores a key-value pair</div>
+</div>
+
+<!-- Question 30 -->
+<div class="question-container">
+    <p class="question">30. How can developers ensure secure data storage in React Native?</p>
+    <ul>
+        <li>A) By using SecureStore for sensitive data</li>
+        <li>B) By always storing data in AsyncStorage</li>
+        <li>C) By disabling local caching</li>
+        <li>D) By removing all stored data after every session</li>
+    </ul>
+    <button class="show-answer" onclick="toggleAnswer(30)">Show Answer</button>
+    <div id="answer30" class="answer">Answer: A) By using SecureStore for sensitive data</div>
+</div>
+
+<footer>
+    <p>Study hard and keep building! 🚀</p>
+</footer>
+
+<script>
+    function toggleAnswer(questionNumber) {
+        const answerElement = document.getElementById('answer' + questionNumber);
+        if (answerElement.style.display === 'none' || answerElement.style.display === '') {
+            answerElement.style.display = 'block';
+        } else {
+            answerElement.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
